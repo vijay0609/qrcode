@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | QR code component</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&display=swap');
+    
+    :root{
+      --White: hsl(0, 0%, 100%);
+      --Light-gray: hsl(212, 45%, 89%);
+      --Grayish-blue: hsl(220, 15%, 55%);
+      --Dark-blue: hsl(218, 44%, 22%);
+    }
+
+    *{
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: "outfit";
+    }
+
+    body{
+      background: var(--Light-gray);
+    }
+
+    #heading{
+      font-size: 22.5px;
+      width: 290px;
+      font-weight: 700;
+      color: var(--Dark-blue);
+      text-align: center;
+      margin: 16px 0 16px;
+    }
+
+    .container{
+      padding: 20px;
+      background-color: var(--White);
+      border-radius: 25px;
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      top: 50%;
+      left: 50%;
+      position: absolute;
+      transform: translate(-50%,-50%);
+      box-shadow: var(--Grayish-blue) 0 10px 50px 0;
+    }
+    
+    .container p{
+      font-size: 15px;
+      width: 250px;
+      margin: 0 0 24px;
+      text-align: center;
+      color:var(--Grayish-blue);
+    }
+
+    .container img{
+      max-width: 290px;
+      border-radius: 15px;
+    }
+
+  </style>
+</head>
+<body>
+  <div class="container">
+    <img src="images/image-qr-code.png" alt="Qr-code">
+    <p id="heading">Improve your front-end skills by building projects</p>
+    <p>Scan the QR code to visit Frontend Mentor and take your coding skills to the next level</p>
+  </div>
+</body>
+</html>
+
+<!--Improve your front-end skills by building projects
+
+  Scan the QR code to visit Frontend Mentor and take your coding skills to the next level-->
